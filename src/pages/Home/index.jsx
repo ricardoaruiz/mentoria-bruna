@@ -21,6 +21,22 @@ export const HomePage = () => {
     setTask('')
   }
 
+  const handleRemoveItemList = (id) => {
+    setTasks(state => state.filter((task) => task.id !== id))
+  }
+
+  const handleCompleteTask = (id) => {
+    const newTasks = tasks.map(task => {
+      if (task.id === id) {
+        task.status = task.status === 'done' ? 'pending' : 'done'
+        return task
+      }
+      return task
+    })
+
+    setTasks(newTasks)
+  }
+
   return (
     <div className="home-container">
       <h1 className="home-title">Todo List</h1>
@@ -31,7 +47,11 @@ export const HomePage = () => {
         onConfirm={handleTaskAddButtonClick}
       />
 
-      <ListTask tasks={tasks} />
+      <ListTask 
+        tasks={tasks} 
+        onRemoveTask={handleRemoveItemList}
+        onCompleteTask={handleCompleteTask}  
+      />
     </div>
   )
 }

@@ -2,11 +2,35 @@
   list-style: none;
 }
 
-.task-list li {
+.task-list__item {
+  display: flex;
+  justify-content: space-between;
+
   padding: 8px;
-  font-size: 1.8rem;
   background-color: #4387ec;
   margin-bottom: 5px;
   color: #fff;
   border-radius: 4px;
+}
+
+.task-list__item-description {
+  font-size: 1.8rem;
+}
+
+.task-list__item-actions svg {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.task-list__item-actions svg:hover {
+  fill: #113e81;
+}
+
+
+.task-list__item--done {
+  background-color: #3c8d3c;
+}
+
+.task-list__item-description--done {
+  text-decoration: line-through;
 }
