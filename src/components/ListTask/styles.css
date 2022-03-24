@@ -1,0 +1,12 @@
+.task-list {
+  list-style: none;
+}
+
+.task-list li {
+  padding: 8px;
+  font-size: 1.8rem;
+  background-color: #4387ec;
+  margin-bottom: 5px;
+  color: #fff;
+  border-radius: 4px;
+}
