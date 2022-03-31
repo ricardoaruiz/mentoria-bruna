@@ -24,16 +24,6 @@
       "id": 5,
       "description": "Task #5",
       "status": "pending"
-    },
-    {
-      "id": "30163aa8-9ef9-4ea8-98a6-5b05b92d62c1",
-      "description": "Testando novamente",
-      "status": "pending"
-    },
-    {
-      "id": "e983dd0b-1453-4312-af32-a0fd4b45ee7c",
-      "description": "Task com o servidor parado",
-      "status": "pending"
     }
   ]
 }
