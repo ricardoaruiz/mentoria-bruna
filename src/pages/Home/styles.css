@@ -29,3 +29,21 @@
   background-color: #5473a1;
   cursor: not-allowed;
 }
+
+.success {
+  background-color: #104ba3;
+  padding: 10px;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 5px;
+  box-shadow: 2px 3px 5px rgba(0,0,0,0.3);
+}
+
+.error {
+  background-color: red;
+  padding: 10px;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 5px;
+  box-shadow: 2px 3px 5px rgba(0,0,0,0.3);
+}
